@@ -22,5 +22,8 @@ pipeline {
                         echo "Deploying in Production Area"
                   }
             }
+              stage('Deploy Production New') {
+                  steps {
+                        echo "Thanks to Avinash Rai"
       }
 }
