@@ -26,5 +26,4 @@ pipeline {
                   steps {
                         echo "Thanks to Avinash Rai"
       }
-}
-      
+              }
