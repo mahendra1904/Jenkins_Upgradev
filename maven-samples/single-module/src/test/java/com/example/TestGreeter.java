@@ -3,8 +3,7 @@ package com.example;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.internal.matchers.GreaterThan;
-import org.mockito.internal.matchers.lessThan;
-
+import org.mockito.internal.matchers.LessThan;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.greaterThan;
@@ -43,11 +42,10 @@ public class TestGreeter {
   }
 
  @Test
-  public void greetShouldIncludeGreetingsMessage() {
-    String someone="new test...........";
+  public void greetShouldIncludeGreetingMessage() {
+    String someone="newtest .........";
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
- 
 
 }
