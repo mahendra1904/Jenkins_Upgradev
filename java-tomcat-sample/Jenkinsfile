@@ -12,20 +12,7 @@ pipeline {
                 }
             }
         }
-        stage('Deploy in Staging Environment'){
-            steps{
-                build job: 'Deploy_Appication_Staging_ENV'
-
-            }
-            
-        }
-        stage('Deploy to Production'){
-            steps{
-                timeout(time:5, unit:'DAYS'){
-                    input message:'Approve PRODUCTION Deployment?'
-                }
-                build job: 'Deploy_Artifact_Prod_Env'
-            }
-        }
+       
+        
     }
 }
